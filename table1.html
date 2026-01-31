@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Schedule</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #fff;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        .day {
+            background-color: #e0e0e0;
+        }
+
+        .sub1 { background-color: #6699FF; color: white; }
+        .sub2 { background-color: #FF9933; color: white; }
+        .sub3 { background-color: #9933FF; color: white; }
+        .sub4 { background-color: #66FF66; color: black; }
+        .sub5 { background-color: #FF3333; color: white; }
+        .swa  { background-color: #FF3333; color: white; }
+
+        .seminar {
+            background-color: white;
+            color: black;
+        }
+
+        .lunch {
+            background-color: white;
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>8:30<br>9:30</th>
+            <th>9:30<br>10:30</th>
+            <th>10:30<br>11:30</th>
+            <th>11:30<br>12:30</th>
+            <th>12:30<br>2:00</th>
+            <th>2:00<br>3:00</th>
+            <th>3:00<br>4:00</th>
+            <th>4:00<br>5:00</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td class="day">MONDAY</td>
+            <td>---</td>
+            <td class="sub1">SUB1</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub3">SUB3</td>
+
+            <!-- LUNCH COLUMN -->
+            <td rowspan="6" class="lunch">L<br>U<br>N<br>C<br>H</td>
+
+            <td class="sub4">SUB4</td>
+            <td class="sub5">SUB5</td>
+            <td>COUNSELLING<br>CLASS</td>
+        </tr>
+
+        <tr>
+            <td class="day">TUESDAY</td>
+            <td class="sub1">SUB1</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub3">SUB3</td>
+            <td>---</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub2">SUB2</td>
+            <td>LIBRARY</td>
+        </tr>
+
+        <tr>
+            <td class="day">WEDNESDAY</td>
+            <td class="sub1">SUB1</td>
+            <td class="sub2">SUB2</td>
+            <td class="swa">SWA</td>
+            <td>---</td>
+            <td colspan="2">LAB</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td class="day">THURSDAY</td>
+            <td class="sub1">SUB1</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub3">SUB3</td>
+            <td>---</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub2">SUB2</td>
+            <td>LIBRARY</td>
+        </tr>
+
+        <tr>
+            <td class="day">FRIDAY</td>
+            <td class="sub1">SUB1</td>
+            <td class="sub2">SUB2</td>
+            <td class="sub3">SUB3</td>
+            <td>---</td>
+            <td class="sub4">SUB4</td>
+            <td class="sub5">SUB5</td>
+            <td>LIBRARY</td>
+        </tr>
+
+        <tr>
+            <td class="day">SATURDAY</td>
+            <td class="sub1">SUB1</td>
+            <td colspan="3" class="seminar">SEMINAR</td>
+            <td class="sub4">SUB4</td>
+            <td class="sub5">SUB5</td>
+            <td>LIBRARY</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
